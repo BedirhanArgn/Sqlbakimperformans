@@ -23,3 +23,5 @@ D:\SQLPROJE\SQLPROJE\obj\Debug\SQLPROJE.pdb
 D:\SQLPROJE\SQLPROJE\obj\Debug\SQLPROJE.FormSorgu.resources
 D:\SQLPROJE\SQLPROJE\obj\Debug\SQLPROJE.FormGorev.resources
 D:\SQLPROJE\SQLPROJE\obj\Debug\SQLPROJE.FormIndex.resources
+D:\SQLPROJE\SQLPROJE\obj\Debug\SQLPROJE.FormBoyut.resources
+D:\SQLPROJE\SQLPROJE\obj\Debug\SQLPROJE.FormYedekleme.resources

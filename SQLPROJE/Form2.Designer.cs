@@ -34,8 +34,8 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.CalisanSorguToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.veritaabnıboyutkucultmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.veritabaniyedeklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GorevYoneticisiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,8 +68,8 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CalisanSorguToolStripMenuItem,
             this.indexToolStripMenuItem,
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem,
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem,
+            this.veritaabnıboyutkucultmeToolStripMenuItem,
+            this.veritabaniyedeklemeToolStripMenuItem,
             this.GorevYoneticisiToolStripMenuItem});
             this.toolStripMenuItem1.Image = global::SQLPROJE.Properties.Resources.iconfinder_menu_alt_134216__1_;
             this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -100,23 +100,25 @@
             this.indexToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.indexToolStripMenuItem.Click += new System.EventHandler(this.indexToolStripMenuItem_Click);
             // 
-            // vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem
+            // veritaabnıboyutkucultmeToolStripMenuItem
             // 
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Image")));
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Name = "vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem";
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Padding = new System.Windows.Forms.Padding(5);
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Size = new System.Drawing.Size(434, 36);
-            this.vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem.Text = "VERİ TABANI BOYUT KÜÇÜLTME";
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("veritaabnıboyutkucultmeToolStripMenuItem.Image")));
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Name = "veritaabnıboyutkucultmeToolStripMenuItem";
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(5);
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Size = new System.Drawing.Size(434, 36);
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Text = "VERİ TABANI BOYUT KÜÇÜLTME";
+            this.veritaabnıboyutkucultmeToolStripMenuItem.Click += new System.EventHandler(this.veritaabnıboyutkucultmeToolStripMenuItem_Click);
             // 
-            // vERİTABANIYEDEKLEMEToolStripMenuItem
+            // veritabaniyedeklemeToolStripMenuItem
             // 
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vERİTABANIYEDEKLEMEToolStripMenuItem.Image")));
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem.Name = "vERİTABANIYEDEKLEMEToolStripMenuItem";
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem.Padding = new System.Windows.Forms.Padding(5);
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem.Size = new System.Drawing.Size(434, 36);
-            this.vERİTABANIYEDEKLEMEToolStripMenuItem.Text = "VERİ TABANI YEDEKLEME";
+            this.veritabaniyedeklemeToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.veritabaniyedeklemeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("veritabaniyedeklemeToolStripMenuItem.Image")));
+            this.veritabaniyedeklemeToolStripMenuItem.Name = "veritabaniyedeklemeToolStripMenuItem";
+            this.veritabaniyedeklemeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(5);
+            this.veritabaniyedeklemeToolStripMenuItem.Size = new System.Drawing.Size(434, 36);
+            this.veritabaniyedeklemeToolStripMenuItem.Text = "VERİ TABANI YEDEKLEME";
+            this.veritabaniyedeklemeToolStripMenuItem.Click += new System.EventHandler(this.veritabaniyedeklemeToolStripMenuItem_Click);
             // 
             // GorevYoneticisiToolStripMenuItem
             // 
@@ -219,8 +221,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem CalisanSorguToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem indexToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vERİTABANIBOYUTKÜÇÜLTMEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vERİTABANIYEDEKLEMEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem veritaabnıboyutkucultmeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem veritabaniyedeklemeToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormIndex));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnSorgula = new System.Windows.Forms.Button();
+            this.btnRebuild = new System.Windows.Forms.Button();
+            this.btnReorganize = new System.Windows.Forms.Button();
+            this.cmbBoxBozulma = new System.Windows.Forms.ComboBox();
+            this.cmbBoxVeriTabanı = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxgeri = new System.Windows.Forms.PictureBox();
             this.pictureBoxcikis = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbBoxVeriTabanı = new System.Windows.Forms.ComboBox();
-            this.cmbBoxBozulma = new System.Windows.Forms.ComboBox();
-            this.btnReorganize = new System.Windows.Forms.Button();
-            this.btnRebuild = new System.Windows.Forms.Button();
-            this.btnSorgula = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxgeri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcikis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,26 +70,82 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // pictureBox1
+            // btnSorgula
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btnSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.btnSorgula.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSorgula.ForeColor = System.Drawing.Color.White;
+            this.btnSorgula.Location = new System.Drawing.Point(459, 97);
+            this.btnSorgula.Name = "btnSorgula";
+            this.btnSorgula.Size = new System.Drawing.Size(158, 52);
+            this.btnSorgula.TabIndex = 12;
+            this.btnSorgula.Text = "SORGULA";
+            this.btnSorgula.UseVisualStyleBackColor = false;
+            this.btnSorgula.Click += new System.EventHandler(this.btnSorgula_Click);
             // 
-            // label1
+            // btnRebuild
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(131, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 33);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "İNDEKS İŞLEMLERİ";
+            this.btnRebuild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.btnRebuild.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRebuild.ForeColor = System.Drawing.Color.White;
+            this.btnRebuild.Location = new System.Drawing.Point(646, 97);
+            this.btnRebuild.Name = "btnRebuild";
+            this.btnRebuild.Size = new System.Drawing.Size(158, 52);
+            this.btnRebuild.TabIndex = 11;
+            this.btnRebuild.Text = "REBUILD";
+            this.btnRebuild.UseVisualStyleBackColor = false;
+            this.btnRebuild.Click += new System.EventHandler(this.btnRebuild_Click);
+            // 
+            // btnReorganize
+            // 
+            this.btnReorganize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.btnReorganize.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnReorganize.ForeColor = System.Drawing.Color.White;
+            this.btnReorganize.Location = new System.Drawing.Point(841, 97);
+            this.btnReorganize.Name = "btnReorganize";
+            this.btnReorganize.Size = new System.Drawing.Size(176, 52);
+            this.btnReorganize.TabIndex = 10;
+            this.btnReorganize.Text = "REORGANIZE";
+            this.btnReorganize.UseVisualStyleBackColor = false;
+            this.btnReorganize.Click += new System.EventHandler(this.btnReorganize_Click);
+            // 
+            // cmbBoxBozulma
+            // 
+            this.cmbBoxBozulma.FormattingEnabled = true;
+            this.cmbBoxBozulma.Location = new System.Drawing.Point(207, 142);
+            this.cmbBoxBozulma.Name = "cmbBoxBozulma";
+            this.cmbBoxBozulma.Size = new System.Drawing.Size(225, 24);
+            this.cmbBoxBozulma.TabIndex = 9;
+            // 
+            // cmbBoxVeriTabanı
+            // 
+            this.cmbBoxVeriTabanı.FormattingEnabled = true;
+            this.cmbBoxVeriTabanı.Location = new System.Drawing.Point(207, 97);
+            this.cmbBoxVeriTabanı.Name = "cmbBoxVeriTabanı";
+            this.cmbBoxVeriTabanı.Size = new System.Drawing.Size(225, 24);
+            this.cmbBoxVeriTabanı.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(13, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(178, 24);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Bozulma Yüzdesi:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(13, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Veri Tabanı Adı:";
             // 
             // pictureBoxgeri
             // 
@@ -113,80 +169,26 @@
             this.pictureBoxcikis.TabStop = false;
             this.pictureBoxcikis.Click += new System.EventHandler(this.pictureBoxcikis_Click);
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Veri Tabanı Adı:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(131, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 33);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "İNDEKS İŞLEMLERİ";
             // 
-            // label3
+            // pictureBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 24);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Bozulma Yüzdesi:";
-            // 
-            // cmbBoxVeriTabanı
-            // 
-            this.cmbBoxVeriTabanı.FormattingEnabled = true;
-            this.cmbBoxVeriTabanı.Location = new System.Drawing.Point(207, 97);
-            this.cmbBoxVeriTabanı.Name = "cmbBoxVeriTabanı";
-            this.cmbBoxVeriTabanı.Size = new System.Drawing.Size(225, 24);
-            this.cmbBoxVeriTabanı.TabIndex = 8;
-            // 
-            // cmbBoxBozulma
-            // 
-            this.cmbBoxBozulma.FormattingEnabled = true;
-            this.cmbBoxBozulma.Location = new System.Drawing.Point(207, 142);
-            this.cmbBoxBozulma.Name = "cmbBoxBozulma";
-            this.cmbBoxBozulma.Size = new System.Drawing.Size(225, 24);
-            this.cmbBoxBozulma.TabIndex = 9;
-            // 
-            // btnReorganize
-            // 
-            this.btnReorganize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnReorganize.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnReorganize.ForeColor = System.Drawing.Color.White;
-            this.btnReorganize.Location = new System.Drawing.Point(841, 97);
-            this.btnReorganize.Name = "btnReorganize";
-            this.btnReorganize.Size = new System.Drawing.Size(176, 52);
-            this.btnReorganize.TabIndex = 10;
-            this.btnReorganize.Text = "REORGANIZE";
-            this.btnReorganize.UseVisualStyleBackColor = false;
-            // 
-            // btnRebuild
-            // 
-            this.btnRebuild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnRebuild.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRebuild.ForeColor = System.Drawing.Color.White;
-            this.btnRebuild.Location = new System.Drawing.Point(646, 97);
-            this.btnRebuild.Name = "btnRebuild";
-            this.btnRebuild.Size = new System.Drawing.Size(158, 52);
-            this.btnRebuild.TabIndex = 11;
-            this.btnRebuild.Text = "REBUILD";
-            this.btnRebuild.UseVisualStyleBackColor = false;
-            // 
-            // btnSorgula
-            // 
-            this.btnSorgula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.btnSorgula.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSorgula.ForeColor = System.Drawing.Color.White;
-            this.btnSorgula.Location = new System.Drawing.Point(459, 97);
-            this.btnSorgula.Name = "btnSorgula";
-            this.btnSorgula.Size = new System.Drawing.Size(158, 52);
-            this.btnSorgula.TabIndex = 12;
-            this.btnSorgula.Text = "SORGULA";
-            this.btnSorgula.UseVisualStyleBackColor = false;
-            this.btnSorgula.Click += new System.EventHandler(this.btnSorgula_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -213,9 +215,9 @@
             this.Load += new System.EventHandler(this.FormIndex_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxgeri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxcikis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

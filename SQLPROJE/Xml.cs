@@ -42,6 +42,11 @@ namespace SQLPROJE
 
 
                 }
+                if(hanginode==4&&sayac2==4)
+                {
+                    sayac2 = 0;
+                    return connectionstring = node.Attributes["value"].Value;
+                }
             }
             return null;
         }

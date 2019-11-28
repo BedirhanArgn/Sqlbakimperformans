@@ -58,6 +58,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBoyut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBoyut.Designer.cs">
+      <DependentUpon>FormBoyut.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGorev.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="FormSorgu.Designer.cs">
       <DependentUpon>FormSorgu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormYedekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYedekleme.Designer.cs">
+      <DependentUpon>FormYedekleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Xml.cs" />
@@ -85,6 +97,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBoyut.resx">
+      <DependentUpon>FormBoyut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGorev.resx">
       <DependentUpon>FormGorev.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSorgu.resx">
       <DependentUpon>FormSorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYedekleme.resx">
+      <DependentUpon>FormYedekleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

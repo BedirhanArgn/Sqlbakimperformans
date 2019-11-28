@@ -56,7 +56,7 @@ namespace SQLPROJE
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Thread.Sleep(100);
+            //Thread.Sleep(200);
             cn = new SqlConnection(x.XmlOku(2));
             SqlCommand cmd2 = new SqlCommand("select * from SqlTask_Clients", cn);
             SqlDataAdapter dr2 = new SqlDataAdapter(cmd2);

@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -44,6 +45,7 @@ namespace SQLPROJE
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Thread.Sleep(100);
             cn.Open();
             cmd = new SqlCommand("sp_executiontime", cn);
             cmd.CommandType = CommandType.StoredProcedure;

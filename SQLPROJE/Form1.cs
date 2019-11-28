@@ -53,5 +53,14 @@ namespace SQLPROJE
 
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Application.Exit();
+            }
+            catch { }
+        }
     }
 }
